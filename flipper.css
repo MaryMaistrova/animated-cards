@@ -35,8 +35,7 @@ body {
   transform: rotateY(-180deg);
 }
 
-.card-front,
-.card-back {
+.card-front, .card-back {
   position: absolute;
   backface-visibility: hidden;
 }
@@ -68,13 +67,11 @@ span {
   font-size: 32px;
   font-weight: bold;
 }
-
 .reds {
   color: crimson;
 }
 
-.column1,
-.column3 {
+.column1, .column3 {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -113,13 +110,32 @@ span {
 }
 
 .royal {
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
   font-size: 64px;
   color: black;
 }
 
 .royal-red {
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
   color: crimson;
   font-size: 64px;
 }
+ 
+
+/* 
+.card-inner {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  transition: 0.8s;
+  transform-style: preserve-3d;
+  animation: myflip 2s infinite;
+}
+
+@keyframes myflip {
+  from {transform: rotateY(-180deg);}
+  to {transform: rotateY(180deg);}
+} */
+
+
+
