@@ -31,7 +31,9 @@ body {
   transform-style: preserve-3d;
 }
 
-.card-whole:hover .card-inner {
+/* .card-whole:is(:hover, .flipped) .card-inner, */
+.card-whole:hover .card-inner,
+.card-whole.flipped .card-inner {
   transform: rotateY(-180deg);
 }
 
